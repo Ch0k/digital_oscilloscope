@@ -30,4 +30,10 @@ sudo docker run \
     
 pip install prometheus_client
 
-    
+# Add to crontab python script
+# and add backup script for prometheus data
+crontab -e
+
+@reboot python /home/pi/ina_project/main.py
+0 12 * * * tar -zcf /var/backups/prometheus.tgz /home/pi/prometheus
+
