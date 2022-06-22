@@ -1,0 +1,2 @@
+sudo docker run -d --restart always -p 9090:9090 --network host -v /home/pi/ina_project/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus
+sudo docker run -d --restart always -p 9090:9090 --network host -v /home/pi/ina_project/prometheus.yml:/etc/prometheus/prometheus.yml -v /home/pi/prometheus/:/prometheus prom/prometheus

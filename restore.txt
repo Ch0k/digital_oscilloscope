@@ -1,0 +1,1 @@
+ sudo tar -xf prometheus.tgz -C /home/pi/prometheus-restore/

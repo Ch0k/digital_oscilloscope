@@ -1,0 +1,6 @@
+docker run -d \
+  --name=arm_exporter \
+  --restart always \
+  --net=host \
+  -p 9243:9243 \
+  carlosedp/arm_exporter
