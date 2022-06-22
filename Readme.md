@@ -37,8 +37,9 @@ sudo docker run -d --restart always -p 3000:3000 --name grafana --net=host grafa
 #run script in rpi.txt   
 pip install prometheus_client
 
-# Add to crontab python script
-# and add backup script for prometheus data
+#Add to crontab python script
+#and add backup script for prometheus data
+
 crontab -e
 
 @reboot python /home/pi/ina_project/main.py
