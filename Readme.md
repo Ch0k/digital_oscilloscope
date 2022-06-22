@@ -1,3 +1,13 @@
+<h1>Hardware
+
+Raspbery Pi, ina260 sensors, ads1115
+
+<h1>Software
+
+Raspberypi_os, python
+
+<h1>How do install
+
 sudo apt-get update
 
 sudo apt-get install \
@@ -21,13 +31,10 @@ sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 
 sudo docker run -d --restart always -p 3000:3000 --name grafana --net=host grafana/grafana
-
-sudo docker run \
-    -d --restart always
-    -p 9090:9090 --network host \
-    -v /home/pi/ina_project/prometheus.yml:/etc/prometheus/prometheus.yml \
-    prom/prometheus
-    
+ 
+#run script in prometheus.txt
+#run script in node.txt
+#run script in rpi.txt   
 pip install prometheus_client
 
 # Add to crontab python script
