@@ -1,12 +1,12 @@
-<h1>Hardware
+<h1>Hardware </h1>
 
 Raspbery Pi, ina260 sensors, ads1115
 
-<h1>Software
+<h1>Software </h1>
 
 Raspberypi_os, python
 
-<h1>How do install
+<h1>How do install </h1>
 
 sudo apt-get update
 
